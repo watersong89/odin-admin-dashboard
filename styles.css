@@ -23,6 +23,10 @@ body {
   grid-template: 20% 1fr / clamp(250px, 30%, 400px) 1fr;
 }
 
+img {
+  width: 100px;
+}
+
 /* Header Section */
 
 header {
