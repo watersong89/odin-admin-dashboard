@@ -29,10 +29,9 @@ all in normal and italic
 
 body {
   display: grid;
-  height: 100vh;
-  width: 100vw;
   grid-template: 20% 1fr / clamp(250px, 30%, 400px) 1fr;
   background-color: var(--color800);
+  font-family: 'roboto', sans-serif;
 }
 
 img {
@@ -47,6 +46,7 @@ img {
   grid-template-rows: 20% 1fr 1fr;
   height: 100vh;
   color: var(--color200);
+  font-weight: 400;
 }
 
 .sb-title {
@@ -77,46 +77,110 @@ img {
   font-size: 1.3rem;
 }
 
+.sidebar-container p:first-of-type {
+  font-weight: bold;
+}
+
 .sidebar-container p,
 .title {
   justify-self: start;
   align-self: center;
 }
+
+
 /* Header Section */
 
 header {
-  background-color: blueviolet;
+  background-color: var(--color200);
   display: grid;
   grid-template-columns: 65% 1fr;
 }
 
 .header-top-left {
-  background-color: thistle;
   display: grid;
   grid-template-columns: 20% 1fr;
+  align-items: center;
 }
 
 .header-top-right {
-  background-color: olive;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  padding: 0 1rem 0 0;
+}
+
+.username {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.header-top-right img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color500);
 }
 
 .header-bottom-left {
-  background-color: salmon;
   display: grid;
   grid-template-columns: 20% 1fr;
+  font-weight: 700;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  align-self: end;
+  padding-bottom: 0.2rem;
+}
+
+.username-lge {
+  font-size: 2rem;
+  padding-top: 0.2rem;
 }
 
 .header-bottom-right {
-  background-color: gold;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
-.profile-pic-large {
+button {
+  border: none;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  background-color: var(--color800);
+  color: var(--color200);
+}
+
+.search-icon {
+  justify-self: center;
+  margin-right: 1rem;
+}
+
+.search-bar {
+  background-color: #dbeafe;
+  height: 30%;
+  border: none;
+  border-radius: 50px;
+  margin-right: 2.5rem;
+  background-color: var(--color50);
+}
+
+.header-bottom-left img {
   grid-area: 1 / 1 / 3 / 2;
-  background-color: brown;
+  justify-self: center;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color500);
 }
 
 /* Main Section */
