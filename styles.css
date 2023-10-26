@@ -9,6 +9,45 @@ body {
   grid-template: 20% 1fr / clamp(250px, 30%, 400px) 1fr;
 }
 
+/* Header Section */
+
+header {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+}
+
+.header-top-left {
+  background-color: thistle;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.header-top-right {
+  background-color: olive;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-bottom-left {
+  background-color: salmon;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.header-bottom-right {
+  background-color: gold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile-pic-large {
+  grid-area: 1 / 1 / 3 / 2;
+  background-color: brown;
+}
+
+/* Sidebar Section */
+
 .sidebar-container {
   background-color: aquamarine;
   grid-area: 1 / 1 / 3 / 2;
@@ -16,20 +55,11 @@ body {
   grid-template-rows: 20% 1fr 1fr;
 }
 
-header {
-  background-color: blueviolet;
-}
-
-main {
-  background-color: pink;
-}
-
 .sb-title {
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 20% 1fr;
   align-items: center;
-  
 }
 
 .sb-section1, .sb-section2 {
@@ -41,4 +71,42 @@ main {
 
 .sb-section2 {
   background-color: hotpink;
+}
+
+/* Main Section */
+
+main {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+}
+
+.main-container {
+  background-color: firebrick;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, clamp(180px, 30%, 200px));
+}
+
+.main-heading {
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+.card {
+  background-color: lightblue;
+  height: 250px;
+}
+
+.main-sidebar {
+  background-color: lawngreen;
+  display: grid;
+}
+
+.sidebar-heading {
+  background-color: seashell;
+}
+
+.side-card {
+  background-color: mediumorchid;
+  height: 500px;
 }
