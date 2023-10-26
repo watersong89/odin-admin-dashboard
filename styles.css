@@ -12,6 +12,17 @@
   --color950: #172554;
 }
 
+/* Fonts: 
+Montserrat Extra Light
+font-family: "montserrat", sans-serif;
+font-weight: 200;
+font-style: normal;
+
+"roboto", "roboto-condensed", "roboto-mono"
+all in 400 and 700 weight
+all in normal and italic
+*/
+
 * {
   box-sizing: border-box;
 }
